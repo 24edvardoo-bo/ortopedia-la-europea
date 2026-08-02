@@ -1,0 +1,250 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortopedia La Europea | Prevención y Detección de Alteraciones Ortopédicas</title>
+    <!-- Tailwind CSS CDN para diseño moderno y rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos profesionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- BARRA DE CONTACTO RÁPIDO -->
+    <div class="bg-teal-700 text-white text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-teal-300 mr-2"></i>Enrique Mac Iver 267, Santiago Centro</span>
+                <span class="hidden md:inline">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-clock text-teal-300 mr-2"></i>Lun - Vie: 10:30 a 18:00 / Sáb: 10:30 a 15:00</span>
+            </div>
+            <a href="https://wa.me/56974687990" target="_blank" class="flex items-center gap-2 bg-teal-600 hover:bg-teal-500 px-3 py-1 rounded transition-all font-semibold">
+                <i class="fa-brands fa-whatsapp text-lg"></i> +56 9 7468 7990
+            </a>
+        </div>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-teal-600 text-white p-2 rounded-lg">
+                    <i class="fa-solid fa-house-medical text-2xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 block">ORTOPEDIA LA EUROPEA</span>
+                    <span class="text-xs text-teal-600 font-semibold tracking-wider uppercase block -mt-1">Central</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex gap-6 font-medium text-slate-600">
+                <a href="#inicio" class="hover:text-teal-600 transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-teal-600 transition-colors">Servicios</a>
+                <a href="#productos" class="hover:text-teal-600 transition-colors">Productos</a>
+                <a href="#contacto" class="hover:text-teal-600 transition-colors">Contacto</a>
+            </nav>
+            <a href="https://wa.me/56974687990" target="_blank" class="bg-teal-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-teal-700 transition-all shadow-md hidden sm:block">
+                Solicitar Evaluación
+            </a>
+        </div>
+    </header>
+
+    <!-- HÉROE / PRESENTACIÓN PRINCIPAL -->
+    <section id="inicio" class="relative bg-gradient-to-r from-teal-800 to-slate-900 text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-teal-500/20 text-teal-300 border border-teal-500/30 px-3 py-1 rounded-full text-sm font-semibold uppercase tracking-wider">
+                    Especialistas en Salud Postural
+                </span>
+                <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
+                    Prevención y detección de alteraciones ortopédicas
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 max-w-xl">
+                    Elaboramos calzado a medida, plantillas ortopédicas personalizadas y órtesis de alta calidad. Trae tu receta médica o solicita una evaluación con nosotros.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/56974687990" target="_blank" class="bg-teal-500 text-slate-900 px-6 py-3 rounded-lg font-bold text-lg hover:bg-teal-400 transition-all shadow-lg flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Agendar Evaluación
+                    </a>
+                    <a href="#servicios" class="border border-slate-500 hover:border-white text-white px-6 py-3 rounded-lg font-semibold transition-all">
+                        Ver Especialidades
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:flex justify-center">
+                <!-- Tarjeta visual destacando el calzado/plantillas -->
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-2xl max-w-sm w-full">
+                    <div class="bg-teal-600/30 text-teal-300 w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Laboratorio Técnico Propio</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Diseñamos soluciones personalizadas adaptadas exactamente a la morfología de tus pies para corregir la pisada y aliviar dolores.
+                    </p>
+                    <hr class="border-white/10 my-4">
+                    <div class="flex items-center gap-2 text-teal-400 font-semibold text-sm">
+                        <i class="fa-solid fa-circle-check"></i> Calzado a Medida e Infantil
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Nuestros Servicios Especializados</h2>
+            <p class="mt-4 text-lg text-slate-600">
+                Atención profesional dirigida a niños, jóvenes y adultos para mejorar su calidad de vida y movilidad.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="text-teal-600 text-3xl mb-4"><i class="fa-solid fa-stethoscope"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Evaluación Ortopédica</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Realizamos un análisis exhaustivo para la prevención, detección precoz y tratamiento de alteraciones en la marcha y postura.
+                </p>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="text-teal-600 text-3xl mb-4"><i class="fa-solid fa-socks"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Plantillas a Medida</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Confección propia de plantillas ortopédicas adaptadas bajo receta médica para corregir patologías de la pisada.
+                </p>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="text-teal-600 text-3xl mb-4"><i class="fa-solid fa-kit-medical"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Elaboración de Órtesis</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Diseño y fabricación de elementos de soporte y contención (Otp) diseñados específicamente para cada necesidad anatómica.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENFOQUE DE PRODUCTOS -->
+    <section id="productos" class="py-25 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
+                    Calzado y Soluciones Ortopédicas Personalizadas
+                </h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Nos especializamos en la confección de calzado ortopédico y terapéutico que combina la funcionalidad clínica necesaria con acabados cómodos y duraderos para el día a día.
+                </p>
+                <ul class="space-y-4 font-medium text-slate-700">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-teal-600"></i> Calzado Ortopédico Infantil y Adulto
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-teal-600"></i> Modificaciones técnicas según receta
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-teal-600"></i> Materiales seleccionados de alta resistencia
+                    </li>
+                </ul>
+                <div class="mt-8">
+                    <a href="https://instagram.com/ortopedia_laeuropea" target="_blank" class="inline-flex items-center gap-2 text-teal-700 hover:text-teal-800 font-bold bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-200 transition-colors">
+                        <i class="fa-brands fa-instagram text-xl text-pink-600"></i> Ver trabajos en Instagram
+                    </a>
+                </div>
+            </div>
+            <!-- Galería conceptual simulación de catálogo/trabajos -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+                    <div class="aspect-square bg-slate-200 rounded-lg mb-3 flex items-center justify-center text-slate-400">
+                        <i class="fa-solid fa-shoe-prints text-4xl"></i>
+                    </div>
+                    <span class="font-bold text-sm block">Plantillas Especiales</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+                    <div class="aspect-square bg-slate-200 rounded-lg mb-3 flex items-center justify-center text-slate-400">
+                        <i class="fa-solid fa-boot text-4xl"></i>
+                    </div>
+                    <span class="font-bold text-sm block">Calzado Infantil</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y CONTACTO -->
+    <section id="contacto" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12 bg-white rounded-2xl shadow-sm border border-slate-200/80 p-8 lg:p-12">
+            
+            <!-- Datos Informativos -->
+            <div class="lg:col-span-1">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Visítanos o Agenda tu Hora</h2>
+                <p class="text-slate-600 mb-8">
+                    Estamos ubicados en pleno centro de Santiago. Trae las indicaciones de tu médico traumatólogo para ponernos a trabajar de inmediato.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start">
+                        <div class="text-teal-600 mt-1"><i class="fa-solid fa-location-dot text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Dirección</h4>
+                            <p class="text-slate-600 text-sm">Enrique Mac Iver 267, 8320197 Santiago, Región Metropolitana</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="text-teal-600 mt-1"><i class="fa-solid fa-phone text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">WhatsApp de Atención</h4>
+                            <p class="text-slate-600 text-sm">+56 9 7468 7990</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="text-teal-600 mt-1"><i class="fa-solid fa-clock text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Horario Laboral</h4>
+                            <p class="text-slate-600 text-sm">Lunes a Viernes: 10:30 a 18:00 hrs.<br>Sábados: 10:30 a 15:00 hrs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa Integrado Interactivo (Google Maps placeholder funcional) -->
+            <div class="lg:col-span-2 h-96 lg:h-full min-h-[350px] rounded-xl overflow-hidden border border-slate-200 relative">
+                <!-- Se puede reemplazar el src por el iframe completo generado en Google Maps si se requiere -->
+                <iframe 
+                    class="w-full h-full border-0" 
+                    src="https://maps.google.com/maps?q=Enrique%20Mac%20Iver%20267,%20Santiago&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-white font-bold text-lg block">Ortopedia La Europea Central</span>
+                <span class="text-sm">© 2026 Todos los derechos reservados. Santiago, Chile.</span>
+            </div>
+            <div class="flex gap-4 text-xl">
+                <a href="https://instagram.com/ortopedia_laeuropea" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/56974687990" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+```
