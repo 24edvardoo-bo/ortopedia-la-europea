@@ -17,10 +17,10 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- CARTEL DE LOCAL CERRADO -->
-    <div class="bg-amber-400 text-slate-900 font-bold p-3 text-center text-sm flex">
-        ⚠️ ATENCIÓN: Actualmente nos encontramos CERRADOS. Nuestro horario es de Lunes a Viernes de 09:00 a 18:00 hrs y Sábados de 10:00 a 15:00 hrs.
-    </div>
+    <!-- CARTEL AUTOMÁTICO DE LOCAL CERRADO -->
+<div id="cartel-cerrado" class="bg-amber-400 text-slate-900 font-bold p-3 text-center text-sm hidden">
+    ⚠️ ATENCIÓN: Actualmente nos encontramos CERRADOS. Nuestro horario es de Lunes a Viernes de 09:00 a 18:00 hrs y Sábados de 10:00 a 15:00 hrs.
+</div>
 
     <!-- NAVEGACIÓN PRINCIPAL -->
     <!-- BARRA DE CONTACTO RÁPIDO -->
@@ -266,8 +266,44 @@
 
         <p class="text-xs mt-2">© 2026 Todos los derechos reservados.</p>
     </footer>
+<p class="text-xs mt-2">&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT DE HORARIO AUTOMÁTICO -->
+    <script>
+        function verificarHorarioLocal() {
+            const ahora = new Date();
+            const dia = ahora.getDay();
+            const hora = ahora.getHours();
+            const minutos = ahora.getMinutes();
+            const horaDecimal = hora + (minutos / 60);
+
+            let estaAbierto = false;
+
+            if (dia >= 1 && dia <= 5) {
+                if (horaDecimal >= 9 && horaDecimal < 18) {
+                    estaAbierto = true;
+                }
+            } 
+            else if (dia === 6) {
+                if (horaDecimal >= 10 && horaDecimal < 15) {
+                    estaAbierto = true;
+                }
+            }
+
+            const cartel = document.getElementById('cartel-cerrado');
+            if (cartel) {
+                if (estaAbierto) {
+                    cartel.classList.add('hidden');
+                } else {
+                    cartel.classList.remove('hidden');
+                }
+            }
+        }
+
+        verificarHorarioLocal();
+    </script>
 
 </body>
 </html>
 
-```
